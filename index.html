@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Emotional Design Lab</title>
+
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='bootstrap.css' rel='stylesheet'/>
+    <link href='fontello.css' rel='stylesheet'/>
+    <link href='bootstrap-slider.css' rel='stylesheet'/>
+    <link href='style.css' rel='stylesheet'/>
+    <link href='swiper.css' rel='stylesheet'/>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+
+<!-- PRELOADER -->
+<!--<div class="page-loader">
+    <div class="loader-overlay"></div>
+    <div class="loader">Loading...</div>
+</div>-->
+<!-- /PRELOADER -->
+
+
+</body>
+<div>
+    <div class="row watch-row">
+        <div class="col-lg-3 watch-panel">
+            <div id="slider">
+                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1"
+                       data-slider-value="50" data-slider-id="RC" id="R" data-slider-tooltip="hide"
+                       data-slider-handle="custom" data-slider-orientation="vertical"/>
+            </div>
+
+            <img id="watch-pic" src="watch.png"/>
+            <h4 class="watch-label" id="slider-label">
+                Android
+            </h4>
+        </div>
+        <div class="col-lg-3 watch-panel">
+            <div class="watch-container">
+                <div class="watch-screen">
+                    <div class="watch-content">
+
+
+                    </div>
+                </div>
+            </div>
+            <h4 class="watch-label">
+                Android
+            </h4>
+        </div>
+
+
+        <div class="col-lg-3 watch-panel">
+            <div class="watch-container">
+                <div class="watch-screen">
+
+
+                    <div class="watch-content">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide swiper-slide-blank">
+                                    <div class="swiper-btn"><i class="icon-chat"></i></div>
+                                </div>
+
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="screen-btn top-btn">
+                        <span>Back</span>
+                    </div>
+                    <div class="screen-btn left-btn swiper-button-prev">
+                        <span>Prev</span>
+                    </div>
+                    <div class="screen-btn right-btn swiper-button-next">
+                        <span>Next</span>
+                    </div>
+                    <div class="screen-btn bottom-btn">
+                        <span>Home</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="watch-label">
+                Swiper
+            </h4>
+        </div>
+        <div class="col-lg-3 watch-panel">
+            <div class="watch-container">
+                <div class="watch-screen">
+                    <div class="watch-content">
+
+
+                    </div>
+                </div>
+            </div>
+            <h4 class="watch-label">
+                Android
+            </h4>
+        </div>
+    </div>
+    <div class="row"></div>
+
+</div>
+
+
+<script src="bootstrap-slider.js"></script>
+<script src="anime.js"></script>
+<script src="swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination         : '.swiper-pagination',
+        paginationClickable: true,
+        nextButton         : '.swiper-button-next',
+        prevButton         : '.swiper-button-prev',
+        slidesPerView      : 3,
+        spaceBetween       : 90
+    });
+</script>
+
+<script src="main.js"></script>
+</html>
+
+
+
