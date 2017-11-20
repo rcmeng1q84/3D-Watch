@@ -5,14 +5,15 @@
 
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='bootstrap.css' rel='stylesheet'/>
-    <link href='fontello.css' rel='stylesheet'/>
-    <link href='bootstrap-slider.css' rel='stylesheet'/>
-    <link href='style.css' rel='stylesheet'/>
-    <link href='swiper.css' rel='stylesheet'/>
+    <link href='css/bootstrap.css' rel='stylesheet'/>
+    <link href='css/fontello.css' rel='stylesheet'/>
+    <link href='css/bootstrap-slider.css' rel='stylesheet'/>
+    <link href='css/style.css' rel='stylesheet'/>
+    <link href='css/swiper.css' rel='stylesheet'/>
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
 
 </head>
 <body>
@@ -26,21 +27,21 @@
 
 
 </body>
-<div>
+<div id="app">
     <div class="row watch-row">
-        <div class="col-lg-3 watch-panel">
+        <div class="col-md-3 watch-panel">
             <div id="slider">
                 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1"
                        data-slider-value="50" data-slider-id="RC" id="R" data-slider-tooltip="hide"
                        data-slider-handle="custom" data-slider-orientation="vertical"/>
             </div>
 
-            <img id="watch-pic" src="watch.png"/>
+            <img id="watch-pic" src="img/watch.png"/>
             <h4 class="watch-label" id="slider-label">
-                Android
+                {{title}}
             </h4>
         </div>
-        <div class="col-lg-3 watch-panel">
+        <div class="col-md-3 watch-panel">
             <div class="watch-container">
                 <div class="watch-screen">
                     <div class="watch-content">
@@ -55,7 +56,7 @@
         </div>
 
 
-        <div class="col-lg-3 watch-panel">
+        <div class="col-md-3 watch-panel">
             <div class="watch-container">
                 <div class="watch-screen">
 
@@ -98,7 +99,7 @@
                 Swiper
             </h4>
         </div>
-        <div class="col-lg-3 watch-panel">
+        <div class="col-md-3 watch-panel">
             <div class="watch-container">
                 <div class="watch-screen">
                     <div class="watch-content">
@@ -117,9 +118,9 @@
 </div>
 
 
-<script src="bootstrap-slider.js"></script>
-<script src="anime.js"></script>
-<script src="swiper.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="js/anime.js"></script>
+<script src="js/swiper.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         pagination         : '.swiper-pagination',
@@ -131,7 +132,8 @@
     });
 </script>
 
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
 </html>
 
 
